@@ -1,14 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Survey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>CC - Survey</title>
 </head>
+
 <body>
-    <h1>Survey Page</h1>
-    <a href="/home">GO TO HOME</a>
-    
+    <div class="container headerContainer">
+
+        <h1 class="center-align">Survey Page</h1 class="center-align">
+        <div class="container center-align">
+            <a href="#" class="btn waves-effect waves-light center-align">SUBMIT</a>
+            <a href="/home" class="btn waves-effect waves-light center-align">HOME</a>
+        </div>
+
+    </div>
+
+    <div class="container userInfo">
+        <div class="row">
+            <div class="col s12">
+                <input id="userName" type="text" class="" required>
+                <label for="userName">Please enter your name</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <input id="userImage" type="text" class="" required>
+                <label for="userImage">Please attach a link to your profile picture</label>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+    <div class="container questionContainer">
+        <div class="col s12">
+            <form id="form"></form>
+
+            <h6>Question One:</h6>
+            <p>Sample Question</p>
+            <p>
+                <label>
+                    <input class="" name="group1" type="radio" value="1" required>
+                    <span>1 (Strongly Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group1" type="radio" value="2">
+                    <span>2 (Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group1" type="radio" value="3" checked>
+                    <span>3 (Neutral)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group1" type="radio" value="4">
+                    <span>4 (Agree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group1" type="radio" value="5">
+                    <span>5 (Strongly Agree)</span>
+                </label>
+            </p>
+            <br>
+
+            <h6>Question Two:</h6>
+            <p>Sample Question</p>
+            <p>
+                <label>
+                    <input class="" name="group2" type="radio" value="1" required>
+                    <span>1 (Strongly Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group2" type="radio" value="2">
+                    <span>2 (Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group2" type="radio" value="3" checked>
+                    <span>3 (Neutral)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group2" type="radio" value="4">
+                    <span>4 (Agree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group2" type="radio" value="5">
+                    <span>5 (Strongly Agree)</span>
+                </label>
+            </p>
+            <br>
+
+            <h6>Question Three:</h6>
+            <p>Sample Question</p>
+            <p>
+                <label>
+                    <input class="" name="group3" type="radio" value="1" required>
+                    <span>1 (Strongly Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group3" type="radio" value="2">
+                    <span>2 (Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group3" type="radio" value="3" checked>
+                    <span>3 (Neutral)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group3" type="radio" value="4">
+                    <span>4 (Agree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group3" type="radio" value="5">
+                    <span>5 (Strongly Agree)</span>
+                </label>
+            </p>
+            <br>
+
+            <h6>Question Four:</h6>
+            <p>Sample Question</p>
+            <p>
+                <label>
+                    <input class="" name="group4" type="radio" value="1" required>
+                    <span>1 (Strongly Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group4" type="radio" value="2">
+                    <span>2 (Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group4" type="radio" value="3" checked>
+                    <span>3 (Neutral)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group4" type="radio" value="4">
+                    <span>4 (Agree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group4" type="radio" value="5">
+                    <span>5 (Strongly Agree)</span>
+                </label>
+            </p>
+            <br>
+
+            <h6>Question Five:</h6>
+            <p>Sample Question</p>
+            <p>
+                <label>
+                    <input class="" name="group5" type="radio" value="1" required>
+                    <span>1 (Strongly Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group5" type="radio" value="2">
+                    <span>2 (Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group5" type="radio" value="3" checked>
+                    <span>3 (Neutral)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group5" type="radio" value="4">
+                    <span>4 (Agree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group5" type="radio" value="5">
+                    <span>5 (Strongly Agree)</span>
+                </label>
+            </p>
+            <br>
+
+            <h6>Question Six:</h6>
+            <p>Sample Question</p>
+            <p>
+                <label>
+                    <input class="" name="group6" type="radio" value="1" required>
+                    <span>1 (Strongly Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group6" type="radio" value="2">
+                    <span>2 (Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group6" type="radio" value="3" checked>
+                    <span>3 (Neutral)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group6" type="radio" value="4">
+                    <span>4 (Agree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group6" type="radio" value="5">
+                    <span>5 (Strongly Agree)</span>
+                </label>
+            </p>
+            <br>
+
+            <h6>Question Seven:</h6>
+            <p>Sample Question</p>
+            <p>
+                <label>
+                    <input class="" name="group7" type="radio" value="1" required>
+                    <span>1 (Strongly Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group7" type="radio" value="2">
+                    <span>2 (Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group7" type="radio" value="3" checked>
+                    <span>3 (Neutral)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group7" type="radio" value="4">
+                    <span>4 (Agree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group7" type="radio" value="5">
+                    <span>5 (Strongly Agree)</span>
+                </label>
+            </p>
+            <br>
+
+            <h6>Question Eight:</h6>
+            <p>Sample Question</p>
+            <p>
+                <label>
+                    <input class="" name="group8" type="radio" value="1" required>
+                    <span>1 (Strongly Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group8" type="radio" value="2">
+                    <span>2 (Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group8" type="radio" value="3" checked>
+                    <span>3 (Neutral)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group8" type="radio" value="4">
+                    <span>4 (Agree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group8" type="radio" value="5">
+                    <span>5 (Strongly Agree)</span>
+                </label>
+            </p>
+            <br>
+
+            <h6>Question Nine:</h6>
+            <p>Sample Question</p>
+            <p>
+                <label>
+                    <input class="" name="group9" type="radio" value="1" required>
+                    <span>1 (Strongly Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group9" type="radio" value="2">
+                    <span>2 (Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group9" type="radio" value="3" checked>
+                    <span>3 (Neutral)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group9" type="radio" value="4">
+                    <span>4 (Agree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group9" type="radio" value="5">
+                    <span>5 (Strongly Agree)</span>
+                </label>
+            </p>
+            <br>
+
+            <h6>Question Ten:</h6>
+            <p>Sample Question</p>
+            <p>
+                <label>
+                    <input class="" name="group10" type="radio" value="1" required>
+                    <span>1 (Strongly Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group10" type="radio" value="2">
+                    <span>2 (Disagree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group10" type="radio" value="3" checked>
+                    <span>3 (Neutral)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group10" type="radio" value="4">
+                    <span>4 (Agree)</span>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input class="" name="group10" type="radio" value="5">
+                    <span>5 (Strongly Agree)</span>
+                </label>
+            </p>
+            </form>
+            <br>
+
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <!-- <h4 id="match-name">Name</h4>
+                  <img src="" id="match-pic"> -->
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container center-align">
+        <button class="btn waves-effect waves-light" type="submit" name="action" id="addUser">Submit Survey</button>
+    </div>
+    <br>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+
+        $("#addUser").on("click", function (event) {
+            var newFriendName = $("#userName").val().trim();
+            event.preventDefault();
+            if ($("#userName").val().trim() != "" && $("#userImage").val().trim() != "") {
+                var surveyResults = $("form").serializeArray();
+
+                var newFriend = {
+                    "name": newFriendName,
+                    "photo": $("#userImage").val().trim(),
+                    "scores": [
+                        surveyResults[0],
+                        surveyResults[1],
+                        surveyResults[2],
+                        surveyResults[3],
+                        surveyResults[4],
+                        surveyResults[5],
+                        surveyResults[6],
+                        surveyResults[7],
+                        surveyResults[8],
+                        surveyResults[9]
+                    ]
+                };
+
+                $("#userName").val("");
+                $("#userImage").val("");
+                console.log(newFriend);
+
+                $.post("api/friends", newFriend).then(function (data) {
+                    $(".modal").empty();
+                    $("#modal-button").attr("style", "");
+                    $("#new-add-name").html(newFriendName);
+                });
+            }
+        });
+    </script>
 </body>
+
+
 </html>
